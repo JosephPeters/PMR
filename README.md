@@ -1,5 +1,7 @@
 # Data Extraction AI Chat Example
 
+[Live Demo](https://pmr-ai.vercel.app)
+
 This project is an example of a data extraction AI chat application designed to gather specific details about an auto accident. The application uses tool function calling to extract relevant information, which can then be sent or used in various ways. While this example utilizes Vercel's AI SDK, the same functionality can be achieved with any framework and Tool Calling LLM.
 
 ## Overview
