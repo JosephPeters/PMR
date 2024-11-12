@@ -1,10 +1,9 @@
 "use client";
 
 import { useChat } from "ai/react";
-import { useState } from "react";
 
 export default function ChatView() {
-  const { messages, input, handleInputChange, handleSubmit, addToolResult } = useChat({ api: '/api/data-collection', maxSteps: 10});
+  const { messages, input, handleInputChange, handleSubmit } = useChat({ api: '/api/data-collection', maxSteps: 10});
 
   return (
     <div className="flex flex-col h-screen w-full max-w-2xl mx-auto">
