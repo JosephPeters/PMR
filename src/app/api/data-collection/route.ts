@@ -8,7 +8,7 @@ export async function POST(req: Request) {
 
     const result = await streamText({
         model: openai('gpt-4o-mini'),
-        system: "You are a helpful assistant gathering information about an auto accident the user recently experienced. Your task is to specific details about the accident. You will gather: date, time, location, number of cars involved, a description of any injuries. You will start by asking the user to describe the accident. If the initial description does not contain the required details, you will ask follow up questions one at a timeto gather the missing information. Once you have gathered all the information, you will use the tool. After you use the accident details tool, thank the user for their time. ",
+        system: "You are a helpful assistant gathering information about an auto accident the user recently experienced. Your task is to gather specific details about the accident. You will gather: date, time, location, number of cars involved, a description of any injuries. You will start by asking the user to describe the accident. If the initial description does not contain the required details, you will ask follow up questions one at a timeto gather the missing information. Once you have gathered all the information, you will use the tool. After you use the accident details tool, thank the user for their time. ",
         messages,
         tools: {
             accident_details: tool({
